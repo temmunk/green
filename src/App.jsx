@@ -6,6 +6,7 @@ import About from './components/About';
 import Services from './components/Services';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import Gallery from './components/Gallery';
 import './App.css';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
           <Header />
           <Routes>
               <Route path="/" element={<><Hero /><About /><Services /><Contact /></>} />
+              <Route path="/gallery" element={<Gallery />} />
           </Routes>
           <Footer />
       </Router>
